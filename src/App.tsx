@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
+function App(){  // ← add return type
+  const [count, setCount] = useState<number>(0)  // ← add generic type
 
   return (
     <div className="min-h-screen bg-green-200 flex items-center justify-center">
@@ -11,6 +11,5 @@ function App() {
     </div>
   )
 }
-
 
 export default App
