@@ -1,61 +1,3879 @@
 {
-  "foods": [
-    { "id": 1,  "name": "Banana Mash",        "ageGroup": "0-5",   "category": "Breakfast", "price": 49,  "calories": 89,  "protein": "1.1g", "carbs": "23g",  "fat": "0.3g",  "rating": 4.8, "isHealthy": true, "emoji": "🍌", "color": "#FFF9C4", "description": "Soft, easy-to-digest banana puree rich in potassium.", "tags": ["soft","sweet","first-food"] },
-    { "id": 2,  "name": "Apple Sauce",         "ageGroup": "0-5",   "category": "Snacks",    "price": 55,  "calories": 52,  "protein": "0.3g", "carbs": "14g",  "fat": "0.1g",  "rating": 4.7, "isHealthy": true, "emoji": "🍎", "color": "#FFEBEE", "description": "Smooth homemade apple puree. No added sugar.", "tags": ["fruit","sweet","vitamin-c"] },
-    { "id": 3,  "name": "Carrot Soup",         "ageGroup": "0-5",   "category": "Lunch",     "price": 79,  "calories": 41,  "protein": "0.9g", "carbs": "10g",  "fat": "0.2g",  "rating": 4.6, "isHealthy": true, "emoji": "🥕", "color": "#FFF3E0", "description": "Smooth carrot puree soup loaded with beta-carotene.", "tags": ["veggie","smooth","vitamin-a"] },
-    { "id": 4,  "name": "Rice Cereal",         "ageGroup": "0-5",   "category": "Breakfast", "price": 45,  "calories": 65,  "protein": "1.5g", "carbs": "14g",  "fat": "0.5g",  "rating": 4.5, "isHealthy": true, "emoji": "🍚", "color": "#F1F8E9", "description": "Fortified rice cereal, perfect first grain food for babies.", "tags": ["grain","iron","first-food"] },
-    { "id": 5,  "name": "Sweet Potato Mash",   "ageGroup": "0-5",   "category": "Dinner",    "price": 69,  "calories": 86,  "protein": "1.6g", "carbs": "20g",  "fat": "0.1g",  "rating": 4.9, "isHealthy": true, "emoji": "🍠", "color": "#FBE9E7", "description": "Creamy sweet potato mash rich in vitamin C and fiber.", "tags": ["veggie","smooth","vitamin-c"] },
-    { "id": 6,  "name": "Pea Puree",           "ageGroup": "0-5",   "category": "Lunch",     "price": 59,  "calories": 62,  "protein": "4.1g", "carbs": "11g",  "fat": "0.3g",  "rating": 4.4, "isHealthy": true, "emoji": "🟢", "color": "#E8F5E9", "description": "Green pea puree packed with plant protein and vitamins.", "tags": ["protein","green","veggie"] },
-    { "id": 7,  "name": "Oatmeal Porridge",    "ageGroup": "0-5",   "category": "Breakfast", "price": 55,  "calories": 71,  "protein": "2.5g", "carbs": "12g",  "fat": "1.4g",  "rating": 4.7, "isHealthy": true, "emoji": "🥣", "color": "#FFF8E1", "description": "Smooth oat porridge, excellent for baby's first solid food.", "tags": ["grain","warm","fiber"] },
-    { "id": 8,  "name": "Avocado Mash",        "ageGroup": "0-5",   "category": "Snacks",    "price": 89,  "calories": 160, "protein": "2g",   "carbs": "9g",   "fat": "15g",   "rating": 4.8, "isHealthy": true, "emoji": "🥑", "color": "#DCEDC8", "description": "Creamy avocado mash loaded with healthy fats for brain development.", "tags": ["healthy-fat","green","brain-food"] },
-    { "id": 9,  "name": "Spinach Puree",       "ageGroup": "0-5",   "category": "Dinner",    "price": 65,  "calories": 23,  "protein": "2.9g", "carbs": "3.6g", "fat": "0.4g",  "rating": 4.3, "isHealthy": true, "emoji": "🌿", "color": "#E8F5E9", "description": "Iron-rich spinach puree. Best mixed with sweet potato.", "tags": ["iron","green","vitamins"] },
-    { "id": 10, "name": "Pumpkin Soup",        "ageGroup": "0-5",   "category": "Dinner",    "price": 75,  "calories": 26,  "protein": "1g",   "carbs": "6g",   "fat": "0.1g",  "rating": 4.6, "isHealthy": true, "emoji": "🎃", "color": "#FFF3E0", "description": "Silky smooth pumpkin soup. High in vitamin A for immunity.", "tags": ["smooth","vitamin-a","veggie"] },
-    { "id": 11, "name": "Peanut Butter Toast", "ageGroup": "6-10",  "category": "Breakfast", "price": 59,  "calories": 190, "protein": "8g",   "carbs": "18g",  "fat": "11g",   "rating": 4.9, "isHealthy": true, "emoji": "🍞", "color": "#FFF8E1", "description": "Whole grain toast with natural peanut butter. Great protein for growing kids.", "tags": ["protein","energy","breakfast"] },
-    { "id": 12, "name": "Fruit Kebabs",        "ageGroup": "6-10",  "category": "Snacks",    "price": 79,  "calories": 75,  "protein": "1g",   "carbs": "18g",  "fat": "0.5g",  "rating": 4.8, "isHealthy": true, "emoji": "🍢", "color": "#FCE4EC", "description": "Colorful skewers with strawberry, melon, grapes and pineapple.", "tags": ["fun","fruit","colorful"] },
-    { "id": 13, "name": "Veggie Pasta",        "ageGroup": "6-10",  "category": "Lunch",     "price": 99,  "calories": 220, "protein": "9g",   "carbs": "40g",  "fat": "3g",    "rating": 4.7, "isHealthy": true, "emoji": "🍝", "color": "#FFF3E0", "description": "Whole wheat pasta with hidden veggie tomato sauce.", "tags": ["pasta","hidden-veggies","lunch"] },
-    { "id": 14, "name": "Cheese Sandwich",     "ageGroup": "6-10",  "category": "Lunch",     "price": 69,  "calories": 280, "protein": "12g",  "carbs": "26g",  "fat": "14g",   "rating": 4.6, "isHealthy": true, "emoji": "🥪", "color": "#FFF9C4", "description": "Multigrain sandwich with cheddar cheese, cucumber and lettuce.", "tags": ["calcium","lunch","easy"] },
-    { "id": 15, "name": "Banana Pancakes",     "ageGroup": "6-10",  "category": "Breakfast", "price": 89,  "calories": 195, "protein": "5g",   "carbs": "35g",  "fat": "4g",    "rating": 4.9, "isHealthy": true, "emoji": "🥞", "color": "#FFF8E1", "description": "2-ingredient banana oat pancakes. No added sugar.", "tags": ["breakfast","sweet","easy"] },
-    { "id": 16, "name": "Cottage Cheese Bowl", "ageGroup": "6-10",  "category": "Snacks",    "price": 75,  "calories": 120, "protein": "14g",  "carbs": "5g",   "fat": "5g",    "rating": 4.5, "isHealthy": true, "emoji": "🫙", "color": "#E3F2FD", "description": "Cottage cheese topped with fresh pineapple and honey.", "tags": ["protein","calcium","snack"] },
-    { "id": 17, "name": "Egg Fried Rice",      "ageGroup": "6-10",  "category": "Dinner",    "price": 89,  "calories": 260, "protein": "10g",  "carbs": "38g",  "fat": "8g",    "rating": 4.8, "isHealthy": true, "emoji": "🍳", "color": "#FFF9C4", "description": "Brown rice stir fried with egg, peas and carrots.", "tags": ["rice","protein","dinner"] },
-    { "id": 18, "name": "Sweet Potato Fries",  "ageGroup": "6-10",  "category": "Snacks",    "price": 79,  "calories": 150, "protein": "2g",   "carbs": "28g",  "fat": "4g",    "rating": 4.7, "isHealthy": true, "emoji": "🍟", "color": "#FBE9E7", "description": "Baked sweet potato fries. A healthy twist on every kid's favorite.", "tags": ["baked","veggie","kids-love"] },
-    { "id": 19, "name": "Grilled Chicken Wrap","ageGroup": "11-15", "category": "Lunch",     "price": 129, "calories": 340, "protein": "28g",  "carbs": "32g",  "fat": "9g",    "rating": 4.8, "isHealthy": true, "emoji": "🌯", "color": "#F1F8E9", "description": "Whole wheat wrap with grilled chicken, avocado and yogurt sauce.", "tags": ["protein","lunch","teen"] },
-    { "id": 20, "name": "Protein Smoothie",    "ageGroup": "11-15", "category": "Breakfast", "price": 109, "calories": 280, "protein": "18g",  "carbs": "35g",  "fat": "6g",    "rating": 4.9, "isHealthy": true, "emoji": "🥤", "color": "#FCE4EC", "description": "Banana, peanut butter, milk and oats blended into a power smoothie.", "tags": ["protein","energy","teen"] },
-    { "id": 21, "name": "Quinoa Salad",        "ageGroup": "11-15", "category": "Lunch",     "price": 119, "calories": 220, "protein": "8g",   "carbs": "35g",  "fat": "7g",    "rating": 4.6, "isHealthy": true, "emoji": "🥗", "color": "#E8F5E9", "description": "Quinoa with cucumber, cherry tomatoes, feta and olive oil.", "tags": ["protein","salad","refreshing"] },
-    { "id": 22, "name": "Overnight Oats",      "ageGroup": "11-15", "category": "Breakfast", "price": 89,  "calories": 310, "protein": "12g",  "carbs": "48g",  "fat": "8g",    "rating": 4.7, "isHealthy": true, "emoji": "🫙", "color": "#FFF8E1", "description": "Oats soaked overnight with chia seeds and topped with berries.", "tags": ["fiber","breakfast","easy-prep"] },
-    { "id": 23, "name": "Stir Fry Veggies",   "ageGroup": "11-15", "category": "Dinner",    "price": 109, "calories": 180, "protein": "6g",   "carbs": "22g",  "fat": "7g",    "rating": 4.5, "isHealthy": true, "emoji": "🥦", "color": "#E8F5E9", "description": "Broccoli, bell pepper, snap peas in sesame-ginger sauce.", "tags": ["veggie","dinner","iron"] },
-    { "id": 24, "name": "Boiled Egg Plate",    "ageGroup": "11-15", "category": "Snacks",    "price": 69,  "calories": 155, "protein": "13g",  "carbs": "1g",   "fat": "11g",   "rating": 4.6, "isHealthy": true, "emoji": "🥚", "color": "#FFF9C4", "description": "2 boiled eggs with salt, pepper and cherry tomatoes.", "tags": ["protein","quick","snack"] },
-    { "id": 25, "name": "Dal Rice Bowl",       "ageGroup": "11-15", "category": "Dinner",    "price": 99,  "calories": 380, "protein": "15g",  "carbs": "60g",  "fat": "6g",    "rating": 4.8, "isHealthy": true, "emoji": "🍲", "color": "#FFF3E0", "description": "Yellow dal with rice, rich in plant protein for growing teens.", "tags": ["protein","comfort","indian"] },
-    { "id": 26, "name": "Avocado Toast",       "ageGroup": "16-20", "category": "Breakfast", "price": 119, "calories": 290, "protein": "8g",   "carbs": "26g",  "fat": "18g",   "rating": 4.9, "isHealthy": true, "emoji": "🥑", "color": "#DCEDC8", "description": "Sourdough toast with mashed avocado, cherry tomatoes and chilli.", "tags": ["healthy-fat","trendy","breakfast"] },
-    { "id": 27, "name": "Chicken Bowl",        "ageGroup": "16-20", "category": "Lunch",     "price": 149, "calories": 450, "protein": "35g",  "carbs": "42g",  "fat": "12g",   "rating": 4.8, "isHealthy": true, "emoji": "🍗", "color": "#FFF3E0", "description": "Grilled chicken over brown rice with roasted veggies and tahini.", "tags": ["protein","meal-prep","filling"] },
-    { "id": 28, "name": "Green Smoothie",      "ageGroup": "16-20", "category": "Snacks",    "price": 99,  "calories": 190, "protein": "5g",   "carbs": "30g",  "fat": "5g",    "rating": 4.7, "isHealthy": true, "emoji": "🥬", "color": "#E8F5E9", "description": "Spinach, banana, apple, ginger and coconut water blended smooth.", "tags": ["detox","green","energy"] },
-    { "id": 29, "name": "Oats and Berries",    "ageGroup": "16-20", "category": "Breakfast", "price": 99,  "calories": 320, "protein": "10g",  "carbs": "55g",  "fat": "7g",    "rating": 4.7, "isHealthy": true, "emoji": "🫐", "color": "#EDE7F6", "description": "Steel-cut oats topped with blueberries, strawberries and honey.", "tags": ["fiber","antioxidant","breakfast"] },
-    { "id": 30, "name": "Grilled Salmon",      "ageGroup": "16-20", "category": "Dinner",    "price": 199, "calories": 367, "protein": "39g",  "carbs": "0g",   "fat": "22g",   "rating": 4.9, "isHealthy": true, "emoji": "🐟", "color": "#E3F2FD", "description": "Grilled salmon fillet with lemon herb sauce and steamed broccoli.", "tags": ["omega-3","protein","premium"] },
-    { "id": 31, "name": "Hummus Veggie Plate", "ageGroup": "16-20", "category": "Snacks",    "price": 109, "calories": 200, "protein": "7g",   "carbs": "24g",  "fat": "9g",    "rating": 4.6, "isHealthy": true, "emoji": "🫘", "color": "#FFF9C4", "description": "Creamy hummus with carrots, cucumber, bell pepper and pita.", "tags": ["snack","veggie","fiber"] },
-    { "id": 32, "name": "Buddha Bowl",         "ageGroup": "21+",   "category": "Lunch",     "price": 159, "calories": 420, "protein": "18g",  "carbs": "52g",  "fat": "14g",   "rating": 4.9, "isHealthy": true, "emoji": "🥙", "color": "#F1F8E9", "description": "Quinoa, roasted sweet potato, chickpeas, kale and lemon tahini.", "tags": ["balanced","colorful","vegan"] },
-    { "id": 33, "name": "Green Detox Juice",   "ageGroup": "21+",   "category": "Breakfast", "price": 129, "calories": 95,  "protein": "2g",   "carbs": "22g",  "fat": "0.5g",  "rating": 4.7, "isHealthy": true, "emoji": "🥒", "color": "#E8F5E9", "description": "Cold-pressed cucumber, celery, spinach, lemon and ginger.", "tags": ["detox","juice","cleanse"] },
-    { "id": 34, "name": "Salmon Poke Bowl",    "ageGroup": "21+",   "category": "Lunch",     "price": 199, "calories": 490, "protein": "30g",  "carbs": "48g",  "fat": "18g",   "rating": 4.8, "isHealthy": true, "emoji": "🫙", "color": "#E3F2FD", "description": "Fresh salmon, rice, edamame, mango, avocado and spicy mayo.", "tags": ["omega-3","premium","trendy"] },
-    { "id": 35, "name": "Chia Pudding",        "ageGroup": "21+",   "category": "Breakfast", "price": 99,  "calories": 210, "protein": "9g",   "carbs": "28g",  "fat": "10g",   "rating": 4.8, "isHealthy": true, "emoji": "🍮", "color": "#EDE7F6", "description": "Overnight chia pudding with almond milk, mango and coconut flakes.", "tags": ["fiber","omega-3","prep-ahead"] },
-    { "id": 36, "name": "Lentil Curry",        "ageGroup": "21+",   "category": "Dinner",    "price": 139, "calories": 350, "protein": "18g",  "carbs": "52g",  "fat": "8g",    "rating": 4.7, "isHealthy": true, "emoji": "🍛", "color": "#FFF3E0", "description": "Red lentil curry with spinach, coconut milk, turmeric and cumin.", "tags": ["protein","vegan","indian"] },
-    { "id": 37, "name": "Walnut Energy Balls", "ageGroup": "21+",   "category": "Snacks",    "price": 89,  "calories": 145, "protein": "4g",   "carbs": "15g",  "fat": "9g",    "rating": 4.6, "isHealthy": true, "emoji": "🫐", "color": "#EFEBE9", "description": "Bliss balls made from dates, walnuts, oats and cocoa. Zero sugar.", "tags": ["energy","snack","no-bake"] },
-    { "id": 38, "name": "Mediterranean Salad", "ageGroup": "21+",   "category": "Lunch",     "price": 149, "calories": 260, "protein": "7g",   "carbs": "18g",  "fat": "18g",   "rating": 4.8, "isHealthy": true, "emoji": "🥗", "color": "#E8F5E9", "description": "Romaine, feta, olives, cucumbers, red onion and Greek dressing.", "tags": ["salad","mediterranean","light"] }
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@hfg.com",
+      "password": "admin123",
+      "role": "admin",
+      "selectedAge": "21+",
+      "totalPoints": 243,
+      "currentStreak": 1,
+      "longestStreak": 7,
+      "lastOrderDate": "Tue Mar 03 2026",
+      "earnedBadges": [
+        "first_order",
+        "streak_3",
+        "level_up"
+      ],
+      "totalOrders": 6,
+      "weeklyOrders": [
+        1,
+        0,
+        3,
+        1,
+        0,
+        1,
+        0
+      ],
+      "createdAt": "2025-01-01",
+      "pointsHistory": [
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 3,
+          "reason": "Voted in daily poll",
+          "date": "3/9/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 25,
+          "reason": "Order placed (+25 pts)",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        }
+      ]
+    },
+    {
+      "id": "3a2e",
+      "name": "Meet",
+      "email": "mgvora@gmail.com",
+      "password": "Meetvora",
+      "role": "user",
+      "selectedAge": "6-10",
+      "totalPoints": 139,
+      "currentStreak": 1,
+      "longestStreak": 1,
+      "lastOrderDate": "Mon Mar 09 2026",
+      "earnedBadges": [
+        "first_order",
+        "level_up"
+      ],
+      "totalOrders": 4,
+      "weeklyOrders": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "createdAt": "01/03/2026",
+      "pointsHistory": [
+        {
+          "pts": 25,
+          "reason": "Order placed (+25 pts)",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 30,
+          "reason": "Order placed (+30 pts)",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "07/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "07/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 3,
+          "reason": "Voted in daily poll",
+          "date": "05/03/2026"
+        }
+      ]
+    },
+    {
+      "id": "e709",
+      "name": "tarang",
+      "email": "tarang@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "selectedAge": "6-10",
+      "totalPoints": 269,
+      "currentStreak": 2,
+      "longestStreak": 2,
+      "lastOrderDate": "Tue Mar 03 2026",
+      "earnedBadges": [
+        "first_order",
+        "level_up"
+      ],
+      "totalOrders": 6,
+      "weeklyOrders": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "createdAt": "3/2/2026",
+      "pointsHistory": [
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/6/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 25,
+          "reason": "Order placed (+25 pts)",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 10,
+          "reason": "Order placed (+10 pts)",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 25,
+          "reason": "Order placed (+25 pts)",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 10,
+          "reason": "Order placed (+10 pts)",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 25,
+          "reason": "Order placed (+25 pts)",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 25,
+          "reason": "Order placed (+25 pts)",
+          "date": "3/2/2026"
+        }
+      ]
+    },
+    {
+      "id": "9e6e",
+      "name": "Aksh",
+      "email": "Aksh@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "selectedAge": "21+",
+      "totalPoints": 52,
+      "currentStreak": 1,
+      "longestStreak": 1,
+      "lastOrderDate": "Mon Mar 02 2026",
+      "earnedBadges": [
+        "first_order",
+        "level_up"
+      ],
+      "totalOrders": 3,
+      "weeklyOrders": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "createdAt": "3/2/2026",
+      "pointsHistory": [
+        {
+          "pts": 10,
+          "reason": "Order placed (+10 pts)",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 10,
+          "reason": "Order placed (+10 pts)",
+          "date": "3/2/2026"
+        }
+      ]
+    },
+    {
+      "id": "f7b6",
+      "name": "Trupal",
+      "email": "Trupal@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "selectedAge": "6-10",
+      "totalPoints": 121,
+      "currentStreak": 2,
+      "longestStreak": 2,
+      "lastOrderDate": "Tue Mar 03 2026",
+      "earnedBadges": [
+        "first_order",
+        "level_up"
+      ],
+      "totalOrders": 2,
+      "weeklyOrders": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "createdAt": "3/2/2026",
+      "pointsHistory": [
+        {
+          "pts": 45,
+          "reason": "Order placed (+45 pts)",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 25,
+          "reason": "Order placed (+25 pts)",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 25,
+          "reason": "Order placed (+25 pts)",
+          "date": "3/2/2026"
+        }
+      ]
+    },
+    {
+      "id": "6334",
+      "name": "het",
+      "email": "het@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "selectedAge": "0-5",
+      "totalPoints": 28,
+      "currentStreak": 0,
+      "longestStreak": 0,
+      "lastOrderDate": null,
+      "earnedBadges": [],
+      "totalOrders": 0,
+      "weeklyOrders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "createdAt": "3/2/2026",
+      "pointsHistory": [
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/2/2026"
+        }
+      ]
+    },
+    {
+      "id": "24dc",
+      "name": "Rahil",
+      "email": "Rahil@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "selectedAge": "21+",
+      "totalPoints": 29,
+      "currentStreak": 1,
+      "longestStreak": 1,
+      "lastOrderDate": "Tue Mar 03 2026",
+      "earnedBadges": [
+        "first_order",
+        "level_up"
+      ],
+      "totalOrders": 1,
+      "weeklyOrders": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "createdAt": "3/3/2026",
+      "pointsHistory": [
+        {
+          "pts": 25,
+          "reason": "Order placed (+25 pts)",
+          "date": "3/3/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "3/3/2026"
+        }
+      ]
+    },
+    {
+      "id": "be5a",
+      "name": "tarang",
+      "email": "tarang12@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "selectedAge": "21+",
+      "totalPoints": 0,
+      "currentStreak": 0,
+      "longestStreak": 0,
+      "lastOrderDate": null,
+      "earnedBadges": [],
+      "totalOrders": 0,
+      "weeklyOrders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "createdAt": "3/3/2026"
+    },
+    {
+      "id": "6995",
+      "name": "tarang123",
+      "email": "tarang123@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "selectedAge": "6-10",
+      "totalPoints": 4,
+      "currentStreak": 0,
+      "longestStreak": 0,
+      "lastOrderDate": null,
+      "earnedBadges": [],
+      "totalOrders": 0,
+      "weeklyOrders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "createdAt": "3/3/2026",
+      "pointsHistory": [
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "09/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "09/03/2026"
+        }
+      ]
+    },
+    {
+      "id": "1d5e",
+      "name": "tarang1010",
+      "email": "tarang1010@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "selectedAge": "6-10",
+      "totalPoints": 0,
+      "currentStreak": 0,
+      "longestStreak": 0,
+      "lastOrderDate": null,
+      "earnedBadges": [],
+      "totalOrders": 0,
+      "weeklyOrders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "createdAt": "3/3/2026"
+    },
+    {
+      "id": "30da",
+      "name": "madhav",
+      "email": "madhav@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "selectedAge": "21+",
+      "totalPoints": 0,
+      "currentStreak": 0,
+      "longestStreak": 0,
+      "lastOrderDate": null,
+      "earnedBadges": [],
+      "totalOrders": 0,
+      "weeklyOrders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "createdAt": "3/3/2026"
+    },
+    {
+      "id": "f800",
+      "name": "vishwa",
+      "email": "vishwa@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "selectedAge": "11-15",
+      "totalPoints": 152,
+      "currentStreak": 0,
+      "longestStreak": 0,
+      "lastOrderDate": null,
+      "earnedBadges": [],
+      "totalOrders": 0,
+      "weeklyOrders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "createdAt": "3/5/2026",
+      "pointsHistory": [
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "06/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to cart",
+          "date": "05/03/2026"
+        },
+        {
+          "pts": 2,
+          "reason": "Added item to wishlist",
+          "date": "05/03/2026"
+        }
+      ]
+    },
+    {
+      "id": "79b8",
+      "name": "meetvora",
+      "email": "meetvora@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "selectedAge": "11-15",
+      "totalPoints": 0,
+      "currentStreak": 0,
+      "longestStreak": 0,
+      "lastOrderDate": null,
+      "earnedBadges": [],
+      "totalOrders": 0,
+      "weeklyOrders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "createdAt": "3/5/2026"
+    },
+    {
+      "id": "a836",
+      "name": "dhurv",
+      "email": "dhurv@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "selectedAge": "21+",
+      "totalPoints": 0,
+      "currentStreak": 0,
+      "longestStreak": 0,
+      "lastOrderDate": null,
+      "earnedBadges": [],
+      "totalOrders": 0,
+      "weeklyOrders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "createdAt": "3/5/2026"
+    },
+    {
+      "id": "49cb",
+      "name": "Rahul JDV",
+      "email": "rahul03@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "selectedAge": "16-20",
+      "totalPoints": 0,
+      "currentStreak": 0,
+      "longestStreak": 0,
+      "lastOrderDate": null,
+      "earnedBadges": [],
+      "totalOrders": 0,
+      "weeklyOrders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "createdAt": "05/03/2026"
+    },
+    {
+      "id": "d87f",
+      "name": "hello",
+      "email": "hyy123@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "selectedAge": "21+",
+      "totalPoints": 0,
+      "currentStreak": 0,
+      "longestStreak": 0,
+      "lastOrderDate": null,
+      "earnedBadges": [],
+      "totalOrders": 0,
+      "weeklyOrders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "createdAt": "09/03/2026"
+    }
   ],
-  "leaderboard": [
-    { "id": 1, "name": "Aarav Shah",   "points": 1250, "level": 4, "avatar": "👦", "streak": 7 },
-    { "id": 2, "name": "Priya Patel",  "points": 1100, "level": 4, "avatar": "👧", "streak": 5 },
-    { "id": 3, "name": "Rohit Mehta",  "points": 980,  "level": 3, "avatar": "🧒", "streak": 3 },
-    { "id": 4, "name": "Sneha Joshi",  "points": 860,  "level": 3, "avatar": "🧑", "streak": 2 },
-    { "id": 5, "name": "Dev Kumar",    "points": 720,  "level": 2, "avatar": "👦", "streak": 1 }
+  "products": [
+    {
+      "id": "1",
+      "name": "Banana Mash",
+      "emoji": "🍌",
+      "price": 49,
+      "category": "Breakfast",
+      "ageGroup": "0-5",
+      "description": "Soft, easy-to-digest banana puree rich in potassium and natural sugars for baby energy.",
+      "calories": 89,
+      "protein": "1.1g",
+      "carbs": "23g",
+      "fat": "0.3g",
+      "rating": 4.8,
+      "stock": 50,
+      "available": true,
+      "isHealthy": true,
+      "color": "#FFF9C4",
+      "tags": [
+        "soft",
+        "sweet",
+        "first-food"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Apple Sauce",
+      "emoji": "🍎",
+      "price": 55,
+      "category": "Snacks",
+      "ageGroup": "0-5",
+      "description": "Smooth homemade apple puree with natural sweetness. No added sugar.",
+      "calories": 52,
+      "protein": "0.3g",
+      "carbs": "14g",
+      "fat": "0.1g",
+      "rating": 4.7,
+      "stock": 40,
+      "available": true,
+      "isHealthy": true,
+      "color": "#FFEBEE",
+      "tags": [
+        "fruit",
+        "sweet",
+        "vitamin-c"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Carrot Soup",
+      "emoji": "🥕",
+      "price": 79,
+      "category": "Lunch",
+      "ageGroup": "0-5",
+      "description": "Smooth carrot puree soup loaded with beta-carotene for healthy eyes.",
+      "calories": 41,
+      "protein": "0.9g",
+      "carbs": "10g",
+      "fat": "0.2g",
+      "rating": 4.6,
+      "stock": 30,
+      "available": true,
+      "isHealthy": true,
+      "color": "#FFF3E0",
+      "tags": [
+        "veggie",
+        "smooth",
+        "vitamin-a"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Rice Cereal",
+      "emoji": "🍚",
+      "price": 45,
+      "category": "Breakfast",
+      "ageGroup": "0-5",
+      "description": "Fortified rice cereal, a perfect first grain food for babies aged 4-6 months.",
+      "calories": 65,
+      "protein": "1.5g",
+      "carbs": "14g",
+      "fat": "0.5g",
+      "rating": 4.5,
+      "stock": 60,
+      "available": true,
+      "isHealthy": true,
+      "color": "#F1F8E9",
+      "tags": [
+        "grain",
+        "iron",
+        "first-food"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Sweet Potato Mash",
+      "emoji": "🍠",
+      "price": 69,
+      "category": "Dinner",
+      "ageGroup": "0-5",
+      "description": "Creamy sweet potato mash rich in vitamin C, B6 and fiber.",
+      "calories": 86,
+      "protein": "1.6g",
+      "carbs": "20g",
+      "fat": "0.1g",
+      "rating": 4.9,
+      "stock": 35,
+      "available": true,
+      "isHealthy": true,
+      "color": "#FBE9E7",
+      "tags": [
+        "veggie",
+        "smooth",
+        "vitamin-c"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Oatmeal Porridge",
+      "emoji": "🥣",
+      "price": 55,
+      "category": "Breakfast",
+      "ageGroup": "0-5",
+      "description": "Smooth oat porridge, excellent for baby's first solid food stage.",
+      "calories": 71,
+      "protein": "2.5g",
+      "carbs": "12g",
+      "fat": "1.4g",
+      "rating": 4.7,
+      "stock": 45,
+      "available": true,
+      "isHealthy": true,
+      "color": "#FFF8E1",
+      "tags": [
+        "grain",
+        "warm",
+        "fiber"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Peanut Butter Toast",
+      "emoji": "🍞",
+      "price": 59,
+      "category": "Breakfast",
+      "ageGroup": "6-10",
+      "description": "Whole grain toast with natural peanut butter. Great protein for growing kids.",
+      "calories": 190,
+      "protein": "8g",
+      "carbs": "18g",
+      "fat": "11g",
+      "rating": 4.9,
+      "stock": 40,
+      "available": true,
+      "isHealthy": true,
+      "color": "#FFF8E1",
+      "tags": [
+        "protein",
+        "energy",
+        "breakfast"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Fruit Kebabs",
+      "emoji": "🍢",
+      "price": 79,
+      "category": "Snacks",
+      "ageGroup": "6-10",
+      "description": "Colorful skewers with strawberry, melon, grapes and pineapple. Kids love these!",
+      "calories": 75,
+      "protein": "1g",
+      "carbs": "18g",
+      "fat": "0.5g",
+      "rating": 4.8,
+      "stock": 25,
+      "available": true,
+      "isHealthy": true,
+      "color": "#FCE4EC",
+      "tags": [
+        "fun",
+        "fruit",
+        "colorful"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Veggie Pasta",
+      "emoji": "🍝",
+      "price": 99,
+      "category": "Lunch",
+      "ageGroup": "6-10",
+      "description": "Whole wheat pasta with hidden veggie tomato sauce. Kids won't even notice!",
+      "calories": 220,
+      "protein": "9g",
+      "carbs": "40g",
+      "fat": "3g",
+      "rating": 4.7,
+      "stock": 30,
+      "available": true,
+      "isHealthy": true,
+      "color": "#FFF3E0",
+      "tags": [
+        "pasta",
+        "hidden-veggies",
+        "lunch"
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Cheese Sandwich",
+      "emoji": "🥪",
+      "price": 69,
+      "category": "Lunch",
+      "ageGroup": "6-10",
+      "description": "Multigrain sandwich with cheddar cheese, cucumber and lettuce.",
+      "calories": 280,
+      "protein": "12g",
+      "carbs": "26g",
+      "fat": "14g",
+      "rating": 4.6,
+      "stock": 35,
+      "available": true,
+      "isHealthy": true,
+      "color": "#FFF9C4",
+      "tags": [
+        "calcium",
+        "lunch",
+        "easy"
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Banana Pancakes",
+      "emoji": "🥞",
+      "price": 89,
+      "category": "Breakfast",
+      "ageGroup": "6-10",
+      "description": "2-ingredient banana oat pancakes. No added sugar, naturally sweet.",
+      "calories": 195,
+      "protein": "5g",
+      "carbs": "35g",
+      "fat": "4g",
+      "rating": 4.9,
+      "stock": 20,
+      "available": true,
+      "isHealthy": true,
+      "color": "#FFF8E1",
+      "tags": [
+        "breakfast",
+        "sweet",
+        "easy"
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Cottage Cheese Bowl",
+      "emoji": "🫙",
+      "price": 75,
+      "category": "Snacks",
+      "ageGroup": "6-10",
+      "description": "Cottage cheese topped with fresh pineapple and a drizzle of honey.",
+      "calories": 120,
+      "protein": "14g",
+      "carbs": "5g",
+      "fat": "5g",
+      "rating": 4.5,
+      "stock": 30,
+      "available": true,
+      "isHealthy": true,
+      "color": "#E3F2FD",
+      "tags": [
+        "protein",
+        "calcium",
+        "snack"
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Egg Fried Rice",
+      "emoji": "🍳",
+      "price": 89,
+      "category": "Dinner",
+      "ageGroup": "6-10",
+      "description": "Brown rice stir fried with egg, peas and carrots. Quick and nutritious.",
+      "calories": 260,
+      "protein": "10g",
+      "carbs": "38g",
+      "fat": "8g",
+      "rating": 4.8,
+      "stock": 25,
+      "available": true,
+      "isHealthy": true,
+      "color": "#FFF9C4",
+      "tags": [
+        "rice",
+        "protein",
+        "dinner"
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Sweet Potato Fries",
+      "emoji": "🍟",
+      "price": 79,
+      "category": "Snacks",
+      "ageGroup": "6-10",
+      "description": "Baked sweet potato fries. A healthy twist on every kid's favorite snack.",
+      "calories": 150,
+      "protein": "2g",
+      "carbs": "28g",
+      "fat": "4g",
+      "rating": 4.7,
+      "stock": 40,
+      "available": true,
+      "isHealthy": true,
+      "color": "#FBE9E7",
+      "tags": [
+        "baked",
+        "veggie",
+        "kids-love"
+      ]
+    },
+    {
+      "id": "22",
+      "name": "Overnight Oats",
+      "emoji": "🫙",
+      "price": 89,
+      "category": "Breakfast",
+      "ageGroup": "11-15",
+      "description": "Creamy overnight oats with chia seeds, berries and honey.",
+      "calories": 310,
+      "protein": "10g",
+      "carbs": "52g",
+      "fat": "7g",
+      "rating": 4.7,
+      "stock": 30,
+      "available": true,
+      "isHealthy": true,
+      "color": "#FFF8E1",
+      "tags": [
+        "oats",
+        "no-cook",
+        "fiber"
+      ]
+    },
+    {
+      "id": "32",
+      "name": "Buddha Bowl",
+      "emoji": "🥙",
+      "price": 159,
+      "category": "Lunch",
+      "ageGroup": "21+",
+      "description": "Quinoa, roasted sweet potato, chickpeas, kale, avocado and lemon tahini.",
+      "calories": 420,
+      "protein": "18g",
+      "carbs": "52g",
+      "fat": "14g",
+      "rating": 4.9,
+      "stock": 20,
+      "available": true,
+      "isHealthy": true,
+      "color": "#F1F8E9",
+      "tags": [
+        "balanced",
+        "colorful",
+        "vegan"
+      ]
+    },
+    {
+      "id": "4046",
+      "name": "noodles",
+      "emoji": "🍕",
+      "price": 200,
+      "category": "Lunch",
+      "ageGroup": "21+",
+      "description": " cxvcxvx",
+      "stock": 48,
+      "available": true
+    },
+    {
+      "id": "0a9c",
+      "name": "cake",
+      "emoji": "🍰",
+      "price": 200,
+      "category": "Breakfast",
+      "ageGroup": "11-15",
+      "description": "dsfdsgdsfsdf",
+      "stock": 50,
+      "available": true
+    },
+    {
+      "id": "1890",
+      "name": "hello",
+      "emoji": "🍱",
+      "price": 200,
+      "category": "Lunch",
+      "ageGroup": "6-10",
+      "description": "xzvcvxv",
+      "stock": 50,
+      "available": true
+    },
+    {
+      "id": "530c",
+      "name": "milk",
+      "emoji": "🌯",
+      "price": 200,
+      "category": "Breakfast",
+      "ageGroup": "6-10",
+      "description": "dsgmdsflgdf",
+      "stock": 500,
+      "available": true
+    },
+    {
+      "id": "d56b",
+      "name": "dog",
+      "emoji": "🦴",
+      "price": 500,
+      "category": "Dinner",
+      "ageGroup": "21+",
+      "description": "abcdefg",
+      "stock": 20,
+      "available": true
+    }
   ],
-  "badges": [
-    { "id": 1, "name": "First Order",  "emoji": "🎉", "description": "Placed your first order",    "unlocked": false },
-    { "id": 2, "name": "Veggie Lover", "emoji": "🥦", "description": "Ordered 5 veggie foods",      "unlocked": false },
-    { "id": 3, "name": "7 Day Streak", "emoji": "🔥", "description": "Ordered 7 days in a row",     "unlocked": false },
-    { "id": 4, "name": "Cart Master",  "emoji": "🛒", "description": "Added 20 items to cart",      "unlocked": false },
-    { "id": 5, "name": "Age Explorer", "emoji": "🧭", "description": "Tried all 5 age groups",      "unlocked": false },
-    { "id": 6, "name": "New Taster",   "emoji": "🍽️", "description": "Tried 10 different foods",    "unlocked": false },
-    { "id": 7, "name": "Healthy Week", "emoji": "🌟", "description": "7 healthy orders in 7 days",  "unlocked": false },
-    { "id": 8, "name": "Level Up",     "emoji": "⬆️", "description": "Reached Level 2 or above",   "unlocked": false },
-    { "id": 9, "name": "3 Day Streak", "emoji": "✨", "description": "Ordered 3 days in a row",     "unlocked": false },
-    { "id": 10,"name": "Wishlist Fan", "emoji": "❤️", "description": "Saved 5 items to wishlist",   "unlocked": false }
-  ]
+  "carts": [
+    {
+      "id": "f5f7",
+      "userId": "1",
+      "itemId": "ea8a",
+      "name": "pizza",
+      "emoji": "🍕",
+      "price": 500,
+      "ageGroup": "6-10",
+      "category": "lunch",
+      "quantity": 1
+    },
+    {
+      "id": "de3c",
+      "userId": "1",
+      "itemId": "ea8a",
+      "name": "pizza",
+      "emoji": "🍕",
+      "price": 500,
+      "ageGroup": "6-10",
+      "category": "lunch",
+      "quantity": 1
+    },
+    {
+      "id": "d255",
+      "userId": "1",
+      "itemId": "18",
+      "name": "Sweet Potato Fries",
+      "emoji": "🍟",
+      "color": "#FBE9E7",
+      "price": 79,
+      "calories": 150,
+      "ageGroup": "6-10",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "id": "81fd",
+      "userId": "6334",
+      "itemId": "18",
+      "name": "Sweet Potato Fries",
+      "emoji": "🍟",
+      "color": "#FBE9E7",
+      "price": 79,
+      "calories": 150,
+      "ageGroup": "6-10",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "id": "ba6b",
+      "userId": "6334",
+      "itemId": "13",
+      "name": "Veggie Pasta",
+      "emoji": "🍝",
+      "color": "#FFF3E0",
+      "price": 99,
+      "calories": 220,
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "4599",
+      "userId": "1",
+      "itemId": "18",
+      "name": "Sweet Potato Fries",
+      "emoji": "🍟",
+      "color": "#FBE9E7",
+      "price": 79,
+      "calories": 150,
+      "ageGroup": "6-10",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "id": "0eb2",
+      "userId": "1",
+      "itemId": "17",
+      "name": "Egg Fried Rice",
+      "emoji": "🍳",
+      "color": "#FFF9C4",
+      "price": 89,
+      "calories": 260,
+      "ageGroup": "6-10",
+      "category": "Dinner",
+      "quantity": 1
+    },
+    {
+      "id": "c63d",
+      "userId": "1",
+      "itemId": "14",
+      "name": "Cheese Sandwich",
+      "emoji": "🥪",
+      "color": "#FFF9C4",
+      "price": 69,
+      "calories": 280,
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "2493",
+      "userId": "1",
+      "itemId": "14",
+      "name": "Cheese Sandwich",
+      "emoji": "🥪",
+      "color": "#FFF9C4",
+      "price": 69,
+      "calories": 280,
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "ffc0",
+      "userId": "1",
+      "itemId": "14",
+      "name": "Cheese Sandwich",
+      "emoji": "🥪",
+      "color": "#FFF9C4",
+      "price": 69,
+      "calories": 280,
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "ed44",
+      "userId": "1",
+      "itemId": "14",
+      "name": "Cheese Sandwich",
+      "emoji": "🥪",
+      "color": "#FFF9C4",
+      "price": 69,
+      "calories": 280,
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "quantity": 2
+    },
+    {
+      "id": "3527",
+      "userId": "1",
+      "itemId": "14",
+      "name": "Cheese Sandwich",
+      "emoji": "🥪",
+      "color": "#FFF9C4",
+      "price": 69,
+      "calories": 280,
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "quantity": 2
+    },
+    {
+      "id": "1020",
+      "userId": "1",
+      "itemId": "14",
+      "name": "Cheese Sandwich",
+      "emoji": "🥪",
+      "color": "#FFF9C4",
+      "price": 69,
+      "calories": 280,
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "quantity": 2
+    },
+    {
+      "id": "9fc7",
+      "userId": "1",
+      "itemId": "14",
+      "name": "Cheese Sandwich",
+      "emoji": "🥪",
+      "color": "#FFF9C4",
+      "price": 69,
+      "calories": 280,
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "7654",
+      "userId": "1",
+      "itemId": "14",
+      "name": "Cheese Sandwich",
+      "emoji": "🥪",
+      "color": "#FFF9C4",
+      "price": 69,
+      "calories": 280,
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "cc14",
+      "userId": "1",
+      "itemId": "14",
+      "name": "Cheese Sandwich",
+      "emoji": "🥪",
+      "color": "#FFF9C4",
+      "price": 69,
+      "calories": 280,
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "quantity": 2
+    },
+    {
+      "id": "9564",
+      "userId": "1",
+      "itemId": "14",
+      "name": "Cheese Sandwich",
+      "emoji": "🥪",
+      "color": "#FFF9C4",
+      "price": 69,
+      "calories": 280,
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "quantity": 2
+    },
+    {
+      "id": "cace",
+      "userId": "1",
+      "itemId": "14",
+      "name": "Cheese Sandwich",
+      "emoji": "🥪",
+      "color": "#FFF9C4",
+      "price": 69,
+      "calories": 280,
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "f0ce",
+      "userId": "1",
+      "itemId": "14",
+      "name": "Cheese Sandwich",
+      "emoji": "🥪",
+      "color": "#FFF9C4",
+      "price": 69,
+      "calories": 280,
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "4d75",
+      "userId": "1",
+      "itemId": "14",
+      "name": "Cheese Sandwich",
+      "emoji": "🥪",
+      "color": "#FFF9C4",
+      "price": 69,
+      "calories": 280,
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "ef3e",
+      "userId": "1",
+      "itemId": 12,
+      "name": "Fruit Kebabs",
+      "emoji": "🍢",
+      "color": "#FCE4EC",
+      "price": 79,
+      "calories": 75,
+      "ageGroup": "6-10",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "id": "e402",
+      "userId": "1",
+      "itemId": "4046",
+      "name": "noodles",
+      "emoji": "🍕",
+      "price": 200,
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "6542",
+      "userId": "1",
+      "itemId": "4046",
+      "name": "noodles",
+      "emoji": "🍕",
+      "price": 200,
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "43df",
+      "userId": "1",
+      "itemId": "32",
+      "name": "Buddha Bowl",
+      "emoji": "🥙",
+      "color": "#F1F8E9",
+      "price": 159,
+      "calories": 420,
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "7203",
+      "userId": "1",
+      "itemId": "32",
+      "name": "Buddha Bowl",
+      "emoji": "🥙",
+      "color": "#F1F8E9",
+      "price": 159,
+      "calories": 420,
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "c4d1",
+      "userId": "1",
+      "itemId": "32",
+      "name": "Buddha Bowl",
+      "emoji": "🥙",
+      "color": "#F1F8E9",
+      "price": 159,
+      "calories": 420,
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "186b",
+      "userId": "1",
+      "itemId": "32",
+      "name": "Buddha Bowl",
+      "emoji": "🥙",
+      "color": "#F1F8E9",
+      "price": 159,
+      "calories": 420,
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "9c42",
+      "userId": "1",
+      "itemId": "32",
+      "name": "Buddha Bowl",
+      "emoji": "🥙",
+      "color": "#F1F8E9",
+      "price": 159,
+      "calories": 420,
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "76fc",
+      "userId": "6334",
+      "itemId": "2",
+      "name": "Apple Sauce",
+      "emoji": "🍎",
+      "color": "#FFEBEE",
+      "price": 55,
+      "calories": 52,
+      "ageGroup": "0-5",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "id": "d130",
+      "userId": "6334",
+      "itemId": "2",
+      "name": "Apple Sauce",
+      "emoji": "🍎",
+      "color": "#FFEBEE",
+      "price": 55,
+      "calories": 52,
+      "ageGroup": "0-5",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "id": "83a0",
+      "userId": "6334",
+      "itemId": "2",
+      "name": "Apple Sauce",
+      "emoji": "🍎",
+      "color": "#FFEBEE",
+      "price": 55,
+      "calories": 52,
+      "ageGroup": "0-5",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "id": "1a0f",
+      "userId": "6334",
+      "itemId": "2",
+      "name": "Apple Sauce",
+      "emoji": "🍎",
+      "color": "#FFEBEE",
+      "price": 55,
+      "calories": 52,
+      "ageGroup": "0-5",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "id": "f04f",
+      "userId": "6334",
+      "itemId": "2",
+      "name": "Apple Sauce",
+      "emoji": "🍎",
+      "color": "#FFEBEE",
+      "price": 55,
+      "calories": 52,
+      "ageGroup": "0-5",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "id": "f489",
+      "userId": "6334",
+      "itemId": "2",
+      "name": "Apple Sauce",
+      "emoji": "🍎",
+      "color": "#FFEBEE",
+      "price": 55,
+      "calories": 52,
+      "ageGroup": "0-5",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "id": "ff02",
+      "userId": "6334",
+      "itemId": "2",
+      "name": "Apple Sauce",
+      "emoji": "🍎",
+      "color": "#FFEBEE",
+      "price": 55,
+      "calories": 52,
+      "ageGroup": "0-5",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "id": "7efb",
+      "userId": "6334",
+      "itemId": "2",
+      "name": "Apple Sauce",
+      "emoji": "🍎",
+      "color": "#FFEBEE",
+      "price": 55,
+      "calories": 52,
+      "ageGroup": "0-5",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "id": "55e2",
+      "userId": "6334",
+      "itemId": "2",
+      "name": "Apple Sauce",
+      "emoji": "🍎",
+      "color": "#FFEBEE",
+      "price": 55,
+      "calories": 52,
+      "ageGroup": "0-5",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "id": "0cff",
+      "userId": "6334",
+      "itemId": "2",
+      "name": "Apple Sauce",
+      "emoji": "🍎",
+      "color": "#FFEBEE",
+      "price": 55,
+      "calories": 52,
+      "ageGroup": "0-5",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "id": "3c46",
+      "userId": "6334",
+      "itemId": "2",
+      "name": "Apple Sauce",
+      "emoji": "🍎",
+      "color": "#FFEBEE",
+      "price": 55,
+      "calories": 52,
+      "ageGroup": "0-5",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "userId": "e709",
+      "itemId": 16,
+      "name": "Cottage Cheese Bowl",
+      "emoji": "🫙",
+      "color": "#E3F2FD",
+      "price": 75,
+      "calories": 120,
+      "ageGroup": "6-10",
+      "category": "Snacks",
+      "quantity": 1,
+      "id": "zrwyU5U"
+    },
+    {
+      "id": "3c46",
+      "userId": "6334",
+      "itemId": "2",
+      "name": "Apple Sauce",
+      "emoji": "🍎",
+      "color": "#FFEBEE",
+      "price": 55,
+      "calories": 52,
+      "ageGroup": "0-5",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "userId": "e709",
+      "itemId": 16,
+      "name": "Cottage Cheese Bowl",
+      "emoji": "🫙",
+      "color": "#E3F2FD",
+      "price": 75,
+      "calories": 120,
+      "ageGroup": "6-10",
+      "category": "Snacks",
+      "quantity": 1,
+      "id": "zrwyU5U"
+    },
+    {
+      "userId": "f800",
+      "itemId": 4,
+      "name": "Rice Cereal",
+      "emoji": "🍚",
+      "color": "#F1F8E9",
+      "price": 45,
+      "calories": 65,
+      "ageGroup": "0-5",
+      "category": "Breakfast",
+      "quantity": 3,
+      "id": "XDMvnhE"
+    },
+    {
+      "userId": "f800",
+      "itemId": 5,
+      "name": "Sweet Potato Mash",
+      "emoji": "🍠",
+      "color": "#FBE9E7",
+      "price": 69,
+      "calories": 86,
+      "ageGroup": "0-5",
+      "category": "Dinner",
+      "quantity": 2,
+      "id": "eb2RgBI"
+    },
+    {
+      "userId": "f800",
+      "itemId": 21,
+      "name": "Quinoa Salad",
+      "emoji": "🥗",
+      "color": "#E8F5E9",
+      "price": 119,
+      "calories": 220,
+      "ageGroup": "11-15",
+      "category": "Lunch",
+      "quantity": 4,
+      "id": "U75LXR5"
+    },
+    {
+      "userId": "f800",
+      "itemId": 22,
+      "name": "Overnight Oats",
+      "emoji": "🫙",
+      "color": "#FFF8E1",
+      "price": 89,
+      "calories": 310,
+      "ageGroup": "11-15",
+      "category": "Breakfast",
+      "quantity": 2,
+      "id": "S1HGWeq"
+    },
+    {
+      "userId": "f800",
+      "itemId": 20,
+      "name": "Protein Smoothie",
+      "emoji": "🥤",
+      "color": "#FCE4EC",
+      "price": 109,
+      "calories": 280,
+      "ageGroup": "11-15",
+      "category": "Breakfast",
+      "quantity": 2,
+      "id": "qF9iBgw"
+    },
+    {
+      "userId": "f800",
+      "itemId": 19,
+      "name": "Grilled Chicken Wrap",
+      "emoji": "🌯",
+      "color": "#F1F8E9",
+      "price": 129,
+      "calories": 340,
+      "ageGroup": "11-15",
+      "category": "Lunch",
+      "quantity": 1,
+      "id": "XP8uXHV"
+    },
+    {
+      "userId": "f800",
+      "itemId": 12,
+      "name": "Fruit Kebabs",
+      "emoji": "🍢",
+      "color": "#FCE4EC",
+      "price": 79,
+      "calories": 75,
+      "ageGroup": "6-10",
+      "category": "Snacks",
+      "quantity": 2,
+      "id": "_U8II2s"
+    },
+    {
+      "userId": "f800",
+      "itemId": 11,
+      "name": "Peanut Butter Toast",
+      "emoji": "🍞",
+      "color": "#FFF8E1",
+      "price": 59,
+      "calories": 190,
+      "ageGroup": "6-10",
+      "category": "Breakfast",
+      "quantity": 1,
+      "id": "3mBJfDf"
+    },
+    {
+      "userId": "f800",
+      "itemId": 1,
+      "name": "Banana Mash",
+      "emoji": "🍌",
+      "color": "#FFF9C4",
+      "price": 49,
+      "calories": 89,
+      "ageGroup": "0-5",
+      "category": "Breakfast",
+      "quantity": 4,
+      "id": "aGee1uE"
+    },
+    {
+      "userId": "f800",
+      "itemId": 2,
+      "name": "Apple Sauce",
+      "emoji": "🍎",
+      "color": "#FFEBEE",
+      "price": 55,
+      "calories": 52,
+      "ageGroup": "0-5",
+      "category": "Snacks",
+      "quantity": 2,
+      "id": "RmW5CUH"
+    },
+    {
+      "userId": "f800",
+      "itemId": 3,
+      "name": "Carrot Soup",
+      "emoji": "🥕",
+      "color": "#FFF3E0",
+      "price": 79,
+      "calories": 41,
+      "ageGroup": "0-5",
+      "category": "Lunch",
+      "quantity": 10,
+      "id": "RCZhGOy"
+    },
+    {
+      "userId": "f800",
+      "itemId": 35,
+      "name": "Chia Pudding",
+      "emoji": "🍮",
+      "color": "#EDE7F6",
+      "price": 99,
+      "calories": 210,
+      "ageGroup": "21+",
+      "category": "Breakfast",
+      "quantity": 2,
+      "id": "RfGcJH5"
+    },
+    {
+      "userId": "f800",
+      "itemId": 34,
+      "name": "Salmon Poke Bowl",
+      "emoji": "🫙",
+      "color": "#E3F2FD",
+      "price": 199,
+      "calories": 490,
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "quantity": 2,
+      "id": "JAdHm0d"
+    },
+    {
+      "itemId": 32,
+      "name": "Buddha Bowl",
+      "emoji": "🥙",
+      "color": "#F1F8E9",
+      "price": 159,
+      "calories": 420,
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "quantity": 1,
+      "id": "ZZLWF3W"
+    },
+    {
+      "userId": "f800",
+      "itemId": 7,
+      "name": "Oatmeal Porridge",
+      "emoji": "🥣",
+      "color": "#FFF8E1",
+      "price": 55,
+      "calories": 71,
+      "ageGroup": "0-5",
+      "category": "Breakfast",
+      "quantity": 1,
+      "id": "OTMLtIP"
+    },
+    {
+      "userId": "f800",
+      "itemId": 9,
+      "name": "Spinach Puree",
+      "emoji": "🌿",
+      "color": "#E8F5E9",
+      "price": 65,
+      "calories": 23,
+      "ageGroup": "0-5",
+      "category": "Dinner",
+      "quantity": 1,
+      "id": "FC9Ma8B"
+    },
+    {
+      "userId": "f800",
+      "itemId": 23,
+      "name": "Stir Fry Veggies",
+      "emoji": "🥦",
+      "color": "#E8F5E9",
+      "price": 109,
+      "calories": 180,
+      "ageGroup": "11-15",
+      "category": "Dinner",
+      "quantity": 1,
+      "id": "G4nVfIg"
+    },
+    {
+      "userId": "f800",
+      "itemId": 13,
+      "name": "Veggie Pasta",
+      "emoji": "🍝",
+      "color": "#FFF3E0",
+      "price": 99,
+      "calories": 220,
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "quantity": 3,
+      "id": "C3DmLNm"
+    },
+    {
+      "userId": "f800",
+      "itemId": 14,
+      "name": "Cheese Sandwich",
+      "emoji": "🥪",
+      "color": "#FFF9C4",
+      "price": 69,
+      "calories": 280,
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "quantity": 1,
+      "id": "4ccbVbt"
+    },
+    {
+      "itemId": 27,
+      "name": "Chicken Bowl",
+      "emoji": "🍗",
+      "color": "#FFF3E0",
+      "price": 149,
+      "calories": 450,
+      "ageGroup": "16-20",
+      "category": "Lunch",
+      "quantity": 1,
+      "id": "ZAokAz6"
+    },
+    {
+      "itemId": 20,
+      "name": "Protein Smoothie",
+      "emoji": "🥤",
+      "color": "#FCE4EC",
+      "price": 109,
+      "calories": 280,
+      "ageGroup": "11-15",
+      "category": "Breakfast",
+      "quantity": 1,
+      "id": "Rn_c95s"
+    },
+    {
+      "itemId": 34,
+      "name": "Salmon Poke Bowl",
+      "emoji": "🫙",
+      "color": "#E3F2FD",
+      "price": 199,
+      "calories": 490,
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "quantity": 1,
+      "id": "WAa-z8q"
+    },
+    {
+      "itemId": 35,
+      "name": "Chia Pudding",
+      "emoji": "🍮",
+      "color": "#EDE7F6",
+      "price": 99,
+      "calories": 210,
+      "ageGroup": "21+",
+      "category": "Breakfast",
+      "quantity": 1,
+      "id": "LDy9lsd"
+    },
+    {
+      "itemId": 34,
+      "name": "Salmon Poke Bowl",
+      "emoji": "🫙",
+      "color": "#E3F2FD",
+      "price": 199,
+      "calories": 490,
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "quantity": 1,
+      "id": "oZ4PVHT"
+    },
+    {
+      "itemId": 34,
+      "name": "Salmon Poke Bowl",
+      "emoji": "🫙",
+      "color": "#E3F2FD",
+      "price": 199,
+      "calories": 490,
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "quantity": 1,
+      "id": "_QRkU9K"
+    },
+    {
+      "itemId": 35,
+      "name": "Chia Pudding",
+      "emoji": "🍮",
+      "color": "#EDE7F6",
+      "price": 99,
+      "calories": 210,
+      "ageGroup": "21+",
+      "category": "Breakfast",
+      "quantity": 1,
+      "id": "zq6FFYW"
+    },
+    {
+      "id": "6934",
+      "userId": "e709",
+      "itemId": 25,
+      "name": "Dal Rice Bowl",
+      "emoji": "🍲",
+      "color": "#FFF3E0",
+      "price": 99,
+      "calories": 380,
+      "ageGroup": "11-15",
+      "category": "Dinner",
+      "quantity": 1
+    },
+    {
+      "id": "b753",
+      "userId": "e709",
+      "itemId": 21,
+      "name": "Quinoa Salad",
+      "emoji": "🥗",
+      "color": "#E8F5E9",
+      "price": 119,
+      "calories": 220,
+      "ageGroup": "11-15",
+      "category": "Lunch",
+      "quantity": 11
+    },
+    {
+      "id": "35a4",
+      "userId": "e709",
+      "itemId": 22,
+      "name": "Overnight Oats",
+      "emoji": "🫙",
+      "color": "#FFF8E1",
+      "price": 89,
+      "calories": 310,
+      "ageGroup": "11-15",
+      "category": "Breakfast",
+      "quantity": 10
+    },
+    {
+      "id": "1e55",
+      "userId": "e709",
+      "itemId": 23,
+      "name": "Stir Fry Veggies",
+      "emoji": "🥦",
+      "color": "#E8F5E9",
+      "price": 109,
+      "calories": 180,
+      "ageGroup": "11-15",
+      "category": "Dinner",
+      "quantity": 2
+    },
+    {
+      "id": "3c46",
+      "userId": "e709",
+      "itemId": 3,
+      "name": "Carrot Soup",
+      "emoji": "🥕",
+      "color": "#FFF3E0",
+      "price": 79,
+      "calories": 41,
+      "ageGroup": "0-5",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "bbcf",
+      "userId": "e709",
+      "itemId": 2,
+      "name": "Apple Sauce",
+      "emoji": "🍎",
+      "color": "#FFEBEE",
+      "price": 55,
+      "calories": 52,
+      "ageGroup": "0-5",
+      "category": "Snacks",
+      "quantity": 2
+    },
+    {
+      "id": "0310",
+      "userId": "e709",
+      "itemId": 34,
+      "name": "Salmon Poke Bowl",
+      "emoji": "🫙",
+      "color": "#E3F2FD",
+      "price": 199,
+      "calories": 490,
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "quantity": 2
+    },
+    {
+      "id": "6934",
+      "userId": "e709",
+      "itemId": 25,
+      "name": "Dal Rice Bowl",
+      "emoji": "🍲",
+      "color": "#FFF3E0",
+      "price": 99,
+      "calories": 380,
+      "ageGroup": "11-15",
+      "category": "Dinner",
+      "quantity": 1
+    },
+    {
+      "id": "b753",
+      "userId": "e709",
+      "itemId": 21,
+      "name": "Quinoa Salad",
+      "emoji": "🥗",
+      "color": "#E8F5E9",
+      "price": 119,
+      "calories": 220,
+      "ageGroup": "11-15",
+      "category": "Lunch",
+      "quantity": 10
+    },
+    {
+      "id": "fa83",
+      "userId": "e709",
+      "itemId": 38,
+      "name": "Mediterranean Salad",
+      "emoji": "🥗",
+      "color": "#E8F5E9",
+      "price": 149,
+      "calories": 260,
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "35a4",
+      "userId": "e709",
+      "itemId": 22,
+      "name": "Overnight Oats",
+      "emoji": "🫙",
+      "color": "#FFF8E1",
+      "price": 89,
+      "calories": 310,
+      "ageGroup": "11-15",
+      "category": "Breakfast",
+      "quantity": 9
+    },
+    {
+      "id": "1e55",
+      "userId": "e709",
+      "itemId": 23,
+      "name": "Stir Fry Veggies",
+      "emoji": "🥦",
+      "color": "#E8F5E9",
+      "price": 109,
+      "calories": 180,
+      "ageGroup": "11-15",
+      "category": "Dinner",
+      "quantity": 2
+    },
+    {
+      "id": "3c46",
+      "userId": "e709",
+      "itemId": 3,
+      "name": "Carrot Soup",
+      "emoji": "🥕",
+      "color": "#FFF3E0",
+      "price": 79,
+      "calories": 41,
+      "ageGroup": "0-5",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "3c46",
+      "userId": "e709",
+      "itemId": 3,
+      "name": "Carrot Soup",
+      "emoji": "🥕",
+      "color": "#FFF3E0",
+      "price": 79,
+      "calories": 41,
+      "ageGroup": "0-5",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "bbcf",
+      "userId": "e709",
+      "itemId": 2,
+      "name": "Apple Sauce",
+      "emoji": "🍎",
+      "color": "#FFEBEE",
+      "price": 55,
+      "calories": 52,
+      "ageGroup": "0-5",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "id": "e96a",
+      "userId": "e709",
+      "itemId": 20,
+      "name": "Protein Smoothie",
+      "emoji": "🥤",
+      "color": "#FCE4EC",
+      "price": 109,
+      "calories": 280,
+      "ageGroup": "11-15",
+      "category": "Breakfast",
+      "quantity": 1
+    },
+    {
+      "itemId": 28,
+      "name": "Green Smoothie",
+      "emoji": "🥬",
+      "color": "#E8F5E9",
+      "price": 99,
+      "calories": 190,
+      "ageGroup": "16-20",
+      "category": "Snacks",
+      "quantity": 1,
+      "id": "ebImsju"
+    },
+    {
+      "id": "8c07",
+      "userId": "3a3a",
+      "itemId": 34,
+      "name": "Salmon Poke Bowl",
+      "emoji": "🫙",
+      "color": "#E3F2FD",
+      "price": 199,
+      "calories": 490,
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "quantity": 3
+    },
+    {
+      "id": "2f83",
+      "userId": "e709",
+      "itemId": 12,
+      "name": "Fruit Kebabs",
+      "emoji": "🍢",
+      "color": "#FCE4EC",
+      "price": 79,
+      "calories": 75,
+      "ageGroup": "6-10",
+      "category": "Snacks",
+      "quantity": 1
+    },
+    {
+      "id": "ca2b",
+      "userId": "e709",
+      "itemId": 28,
+      "name": "Green Smoothie",
+      "emoji": "🥬",
+      "color": "#E8F5E9",
+      "price": 99,
+      "calories": 190,
+      "ageGroup": "16-20",
+      "category": "Snacks",
+      "quantity": 2
+    },
+    {
+      "id": "8c9b",
+      "userId": "3a3a",
+      "itemId": 33,
+      "name": "Green Detox Juice",
+      "emoji": "🥒",
+      "color": "#E8F5E9",
+      "price": 129,
+      "calories": 95,
+      "ageGroup": "21+",
+      "category": "Breakfast",
+      "quantity": 2
+    },
+    {
+      "id": "a792",
+      "userId": "3a3a",
+      "itemId": 35,
+      "name": "Chia Pudding",
+      "emoji": "🍮",
+      "color": "#EDE7F6",
+      "price": 99,
+      "calories": 210,
+      "ageGroup": "21+",
+      "category": "Breakfast",
+      "quantity": 1
+    },
+    {
+      "id": "12c9",
+      "userId": "1",
+      "itemId": 34,
+      "name": "Salmon Poke Bowl",
+      "emoji": "🫙",
+      "color": "#E3F2FD",
+      "price": 199,
+      "calories": 490,
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "quantity": 1
+    },
+    {
+      "id": "7195",
+      "userId": "6995",
+      "itemId": 12,
+      "name": "Fruit Kebabs",
+      "emoji": "🍢",
+      "color": "#FCE4EC",
+      "price": 79,
+      "calories": 75,
+      "ageGroup": "6-10",
+      "category": "Snacks",
+      "quantity": 1
+    }
+  ],
+  "wishlists": [
+    {
+      "id": "32",
+      "userId": "1",
+      "itemId": 32,
+      "name": "Buddha Bowl",
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "price": 159,
+      "calories": 420,
+      "protein": "18g",
+      "carbs": "52g",
+      "fat": "14g",
+      "rating": 4.9,
+      "isHealthy": true,
+      "emoji": "🥙",
+      "color": "#F1F8E9",
+      "description": "Quinoa, roasted sweet potato, chickpeas, kale, avocado and lemon tahini.",
+      "tags": [
+        "balanced",
+        "colorful",
+        "vegan"
+      ]
+    },
+    {
+      "id": "34",
+      "userId": "f7b6",
+      "itemId": 34,
+      "name": "Salmon Poke Bowl",
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "price": 199,
+      "calories": 490,
+      "protein": "30g",
+      "carbs": "48g",
+      "fat": "18g",
+      "rating": 4.8,
+      "isHealthy": true,
+      "emoji": "🫙",
+      "color": "#E3F2FD",
+      "description": "Fresh salmon, rice, edamame, mango, avocado and spicy mayo.",
+      "tags": [
+        "omega-3",
+        "premium",
+        "trendy"
+      ]
+    },
+    {
+      "id": "17",
+      "userId": "f7b6",
+      "itemId": 17,
+      "name": "Egg Fried Rice",
+      "ageGroup": "6-10",
+      "category": "Dinner",
+      "price": 89,
+      "calories": 260,
+      "protein": "10g",
+      "carbs": "38g",
+      "fat": "8g",
+      "rating": 4.8,
+      "isHealthy": true,
+      "emoji": "🍳",
+      "color": "#FFF9C4",
+      "description": "Brown rice stir fried with egg, peas and carrots. Quick and nutritious.",
+      "tags": [
+        "rice",
+        "protein",
+        "dinner"
+      ]
+    },
+    {
+      "id": "18",
+      "userId": "f7b6",
+      "itemId": 18,
+      "name": "Sweet Potato Fries",
+      "ageGroup": "6-10",
+      "category": "Snacks",
+      "price": 79,
+      "calories": 150,
+      "protein": "2g",
+      "carbs": "28g",
+      "fat": "4g",
+      "rating": 4.7,
+      "isHealthy": true,
+      "emoji": "🍟",
+      "color": "#FBE9E7",
+      "description": "Baked sweet potato fries. A healthy twist on every kid's favorite snack.",
+      "tags": [
+        "baked",
+        "veggie",
+        "kids-love"
+      ]
+    },
+    {
+      "id": "16",
+      "userId": "f7b6",
+      "itemId": 16,
+      "name": "Cottage Cheese Bowl",
+      "ageGroup": "6-10",
+      "category": "Snacks",
+      "price": 75,
+      "calories": 120,
+      "protein": "14g",
+      "carbs": "5g",
+      "fat": "5g",
+      "rating": 4.5,
+      "isHealthy": true,
+      "emoji": "🫙",
+      "color": "#E3F2FD",
+      "description": "Cottage cheese topped with fresh pineapple and a drizzle of honey.",
+      "tags": [
+        "protein",
+        "calcium",
+        "snack"
+      ]
+    },
+    {
+      "id": "11",
+      "userId": "f7b6",
+      "itemId": 11,
+      "name": "Peanut Butter Toast",
+      "ageGroup": "6-10",
+      "category": "Breakfast",
+      "price": 59,
+      "calories": 190,
+      "protein": "8g",
+      "carbs": "18g",
+      "fat": "11g",
+      "rating": 4.9,
+      "isHealthy": true,
+      "emoji": "🍞",
+      "color": "#FFF8E1",
+      "description": "Whole grain toast with natural peanut butter. Great protein for growing kids.",
+      "tags": [
+        "protein",
+        "energy",
+        "breakfast"
+      ]
+    },
+    {
+      "id": "12",
+      "userId": "f7b6",
+      "itemId": 12,
+      "name": "Fruit Kebabs",
+      "ageGroup": "6-10",
+      "category": "Snacks",
+      "price": 79,
+      "calories": 75,
+      "protein": "1g",
+      "carbs": "18g",
+      "fat": "0.5g",
+      "rating": 4.8,
+      "isHealthy": true,
+      "emoji": "🍢",
+      "color": "#FCE4EC",
+      "description": "Colorful skewers with strawberry, melon, grapes and pineapple. Kids love these!",
+      "tags": [
+        "fun",
+        "fruit",
+        "colorful"
+      ]
+    },
+    {
+      "id": "14",
+      "userId": "f7b6",
+      "itemId": 14,
+      "name": "Cheese Sandwich",
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "price": 69,
+      "calories": 280,
+      "protein": "12g",
+      "carbs": "26g",
+      "fat": "14g",
+      "rating": 4.6,
+      "isHealthy": true,
+      "emoji": "🥪",
+      "color": "#FFF9C4",
+      "description": "Multigrain sandwich with cheddar cheese, cucumber and lettuce.",
+      "tags": [
+        "calcium",
+        "lunch",
+        "easy"
+      ]
+    },
+    {
+      "id": "15",
+      "userId": "f7b6",
+      "itemId": 15,
+      "name": "Banana Pancakes",
+      "ageGroup": "6-10",
+      "category": "Breakfast",
+      "price": 89,
+      "calories": 195,
+      "protein": "5g",
+      "carbs": "35g",
+      "fat": "4g",
+      "rating": 4.9,
+      "isHealthy": true,
+      "emoji": "🥞",
+      "color": "#FFF8E1",
+      "description": "2-ingredient banana oat pancakes. No added sugar, naturally sweet.",
+      "tags": [
+        "breakfast",
+        "sweet",
+        "easy"
+      ]
+    },
+    {
+      "id": "18",
+      "userId": "6334",
+      "itemId": "18",
+      "name": "Sweet Potato Fries",
+      "emoji": "🍟",
+      "price": 79,
+      "category": "Snacks",
+      "ageGroup": "6-10",
+      "description": "Baked sweet potato fries. A healthy twist on every kid's favorite snack.",
+      "calories": 150,
+      "protein": "2g",
+      "carbs": "28g",
+      "fat": "4g",
+      "rating": 4.7,
+      "stock": 40,
+      "available": true,
+      "isHealthy": true,
+      "color": "#FBE9E7",
+      "tags": [
+        "baked",
+        "veggie",
+        "kids-love"
+      ]
+    },
+    {
+      "id": "32",
+      "userId": "1",
+      "itemId": "32",
+      "name": "Buddha Bowl",
+      "emoji": "🥙",
+      "price": 159,
+      "category": "Lunch",
+      "ageGroup": "21+",
+      "description": "Quinoa, roasted sweet potato, chickpeas, kale, avocado and lemon tahini.",
+      "calories": 420,
+      "protein": "18g",
+      "carbs": "52g",
+      "fat": "14g",
+      "rating": 4.9,
+      "stock": 20,
+      "available": true,
+      "isHealthy": true,
+      "color": "#F1F8E9",
+      "tags": [
+        "balanced",
+        "colorful",
+        "vegan"
+      ]
+    },
+    {
+      "name": "Buddha Bowl",
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "price": 159,
+      "calories": 420,
+      "protein": "18g",
+      "carbs": "52g",
+      "fat": "14g",
+      "rating": 4.9,
+      "isHealthy": true,
+      "emoji": "🥙",
+      "color": "#F1F8E9",
+      "description": "Quinoa, roasted sweet potato, chickpeas, kale, avocado and lemon tahini.",
+      "tags": [
+        "balanced",
+        "colorful",
+        "vegan"
+      ],
+      "itemId": 32,
+      "id": "3glXHmX"
+    },
+    {
+      "name": "Cheese Sandwich",
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "price": 69,
+      "calories": 280,
+      "protein": "12g",
+      "carbs": "26g",
+      "fat": "14g",
+      "rating": 4.6,
+      "isHealthy": true,
+      "emoji": "🥪",
+      "color": "#FFF9C4",
+      "description": "Multigrain sandwich with cheddar cheese, cucumber and lettuce.",
+      "tags": [
+        "calcium",
+        "lunch",
+        "easy"
+      ],
+      "userId": "f800",
+      "itemId": 14,
+      "id": "ZloewvH"
+    },
+    {
+      "name": "Grilled Chicken Wrap",
+      "ageGroup": "11-15",
+      "category": "Lunch",
+      "price": 129,
+      "calories": 340,
+      "protein": "28g",
+      "carbs": "32g",
+      "fat": "9g",
+      "rating": 4.8,
+      "isHealthy": true,
+      "emoji": "🌯",
+      "color": "#F1F8E9",
+      "description": "Whole wheat wrap with grilled chicken, avocado, lettuce and yogurt sauce.",
+      "tags": [
+        "protein",
+        "lunch",
+        "teen"
+      ],
+      "userId": "f800",
+      "itemId": 19,
+      "id": "0HL1bVq"
+    },
+    {
+      "name": "Protein Smoothie",
+      "ageGroup": "11-15",
+      "category": "Breakfast",
+      "price": 109,
+      "calories": 280,
+      "protein": "18g",
+      "carbs": "35g",
+      "fat": "6g",
+      "rating": 4.9,
+      "isHealthy": true,
+      "emoji": "🥤",
+      "color": "#FCE4EC",
+      "description": "Banana, peanut butter, milk and oats blended into a power-packed smoothie.",
+      "tags": [
+        "protein",
+        "energy",
+        "teen"
+      ],
+      "userId": "f800",
+      "itemId": 20,
+      "id": "wFjHaVc"
+    },
+    {
+      "id": "1f43",
+      "name": "Quinoa Salad",
+      "ageGroup": "11-15",
+      "category": "Lunch",
+      "price": 119,
+      "calories": 220,
+      "protein": "8g",
+      "carbs": "35g",
+      "fat": "7g",
+      "rating": 4.6,
+      "isHealthy": true,
+      "emoji": "🥗",
+      "color": "#E8F5E9",
+      "description": "Quinoa with cucumber, cherry tomatoes, feta and olive oil dressing.",
+      "tags": [
+        "protein",
+        "salad",
+        "refreshing"
+      ],
+      "userId": "e709",
+      "itemId": 21
+    },
+    {
+      "id": "ee3d",
+      "name": "Buddha Bowl",
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "price": 159,
+      "calories": 420,
+      "protein": "18g",
+      "carbs": "52g",
+      "fat": "14g",
+      "rating": 4.9,
+      "isHealthy": true,
+      "emoji": "🥙",
+      "color": "#F1F8E9",
+      "description": "Quinoa, roasted sweet potato, chickpeas, kale, avocado and lemon tahini.",
+      "tags": [
+        "balanced",
+        "colorful",
+        "vegan"
+      ],
+      "userId": "3a3a",
+      "itemId": 32
+    },
+    {
+      "id": "0914",
+      "name": "Fruit Kebabs",
+      "ageGroup": "6-10",
+      "category": "Snacks",
+      "price": 79,
+      "calories": 75,
+      "protein": "1g",
+      "carbs": "18g",
+      "fat": "0.5g",
+      "rating": 4.8,
+      "isHealthy": true,
+      "emoji": "🍢",
+      "color": "#FCE4EC",
+      "description": "Colorful skewers with strawberry, melon, grapes and pineapple. Kids love these!",
+      "tags": [
+        "fun",
+        "fruit",
+        "colorful"
+      ],
+      "userId": "e709",
+      "itemId": 12
+    },
+    {
+      "id": "0914",
+      "name": "Fruit Kebabs",
+      "ageGroup": "6-10",
+      "category": "Snacks",
+      "price": 79,
+      "calories": 75,
+      "protein": "1g",
+      "carbs": "18g",
+      "fat": "0.5g",
+      "rating": 4.8,
+      "isHealthy": true,
+      "emoji": "🍢",
+      "color": "#FCE4EC",
+      "description": "Colorful skewers with strawberry, melon, grapes and pineapple. Kids love these!",
+      "tags": [
+        "fun",
+        "fruit",
+        "colorful"
+      ],
+      "userId": "e709",
+      "itemId": 12
+    },
+    {
+      "id": "4abe",
+      "name": "Veggie Pasta",
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "price": 99,
+      "calories": 220,
+      "protein": "9g",
+      "carbs": "40g",
+      "fat": "3g",
+      "rating": 4.7,
+      "isHealthy": true,
+      "emoji": "🍝",
+      "color": "#FFF3E0",
+      "description": "Whole wheat pasta with hidden veggie tomato sauce. Kids won't even notice!",
+      "tags": [
+        "pasta",
+        "hidden-veggies",
+        "lunch"
+      ],
+      "userId": "3a2e",
+      "itemId": 13
+    },
+    {
+      "id": "6301",
+      "name": "Avocado Toast",
+      "ageGroup": "16-20",
+      "category": "Breakfast",
+      "price": 119,
+      "calories": 290,
+      "protein": "8g",
+      "carbs": "26g",
+      "fat": "18g",
+      "rating": 4.9,
+      "isHealthy": true,
+      "emoji": "🥑",
+      "color": "#DCEDC8",
+      "description": "Sourdough toast topped with mashed avocado, cherry tomatoes and chilli flakes.",
+      "tags": [
+        "healthy-fat",
+        "trendy",
+        "breakfast"
+      ],
+      "userId": "3a3a",
+      "itemId": 26
+    },
+    {
+      "id": "c8bb",
+      "name": "Green Detox Juice",
+      "ageGroup": "21+",
+      "category": "Breakfast",
+      "price": 129,
+      "calories": 95,
+      "protein": "2g",
+      "carbs": "22g",
+      "fat": "0.5g",
+      "rating": 4.7,
+      "isHealthy": true,
+      "emoji": "🥒",
+      "color": "#E8F5E9",
+      "description": "Cold-pressed cucumber, celery, spinach, lemon and ginger. Resets your gut.",
+      "tags": [
+        "detox",
+        "juice",
+        "cleanse"
+      ],
+      "userId": "3a3a",
+      "itemId": 33
+    },
+    {
+      "id": "74d7",
+      "name": "Carrot Soup",
+      "ageGroup": "0-5",
+      "category": "Lunch",
+      "price": 79,
+      "calories": 41,
+      "protein": "0.9g",
+      "carbs": "10g",
+      "fat": "0.2g",
+      "rating": 4.6,
+      "isHealthy": true,
+      "emoji": "🥕",
+      "color": "#FFF3E0",
+      "description": "Smooth carrot puree soup loaded with beta-carotene for healthy eyes.",
+      "tags": [
+        "veggie",
+        "smooth",
+        "vitamin-a"
+      ],
+      "userId": "3a3a",
+      "itemId": 3
+    },
+    {
+      "id": "0f87",
+      "name": "Salmon Poke Bowl",
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "price": 199,
+      "calories": 490,
+      "protein": "30g",
+      "carbs": "48g",
+      "fat": "18g",
+      "rating": 4.8,
+      "isHealthy": true,
+      "emoji": "🫙",
+      "color": "#E3F2FD",
+      "description": "Fresh salmon, rice, edamame, mango, avocado and spicy mayo.",
+      "tags": [
+        "omega-3",
+        "premium",
+        "trendy"
+      ],
+      "userId": "3a3a",
+      "itemId": 34
+    },
+    {
+      "id": "ed00",
+      "name": "Chia Pudding",
+      "ageGroup": "21+",
+      "category": "Breakfast",
+      "price": 99,
+      "calories": 210,
+      "protein": "9g",
+      "carbs": "28g",
+      "fat": "10g",
+      "rating": 4.8,
+      "isHealthy": true,
+      "emoji": "🍮",
+      "color": "#EDE7F6",
+      "description": "Overnight chia pudding with almond milk, topped with mango and coconut flakes.",
+      "tags": [
+        "fiber",
+        "omega-3",
+        "prep-ahead"
+      ],
+      "userId": "3a3a",
+      "itemId": 35
+    },
+    {
+      "id": "9638",
+      "name": "Grilled Salmon",
+      "ageGroup": "16-20",
+      "category": "Dinner",
+      "price": 199,
+      "calories": 367,
+      "protein": "39g",
+      "carbs": "0g",
+      "fat": "22g",
+      "rating": 4.9,
+      "isHealthy": true,
+      "emoji": "🐟",
+      "color": "#E3F2FD",
+      "description": "Grilled salmon fillet with lemon herb sauce and steamed broccoli on the side.",
+      "tags": [
+        "omega-3",
+        "protein",
+        "premium"
+      ],
+      "userId": "3a2e",
+      "itemId": 30
+    },
+    {
+      "id": "7970",
+      "name": "hello",
+      "ageGroup": "6-10",
+      "category": "Lunch",
+      "price": 200,
+      "calories": 0,
+      "protein": "0g",
+      "carbs": "0g",
+      "fat": "0g",
+      "rating": 4.5,
+      "isHealthy": true,
+      "emoji": "🍱",
+      "color": "#E8F5E9",
+      "description": "xzvcvxv",
+      "tags": [
+        "lunch"
+      ],
+      "userId": "3a2e",
+      "itemId": 1001890
+    },
+    {
+      "id": "04f0",
+      "name": "noodles",
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "price": 200,
+      "calories": 0,
+      "protein": "0g",
+      "carbs": "0g",
+      "fat": "0g",
+      "rating": 4.5,
+      "isHealthy": true,
+      "emoji": "🍕",
+      "color": "#E8F5E9",
+      "description": " cxvcxvx",
+      "tags": [
+        "lunch"
+      ],
+      "userId": "1",
+      "itemId": 1004046
+    },
+    {
+      "id": "f694",
+      "name": "Salmon Poke Bowl",
+      "ageGroup": "21+",
+      "category": "Lunch",
+      "price": 199,
+      "calories": 490,
+      "protein": "30g",
+      "carbs": "48g",
+      "fat": "18g",
+      "rating": 4.8,
+      "isHealthy": true,
+      "emoji": "🫙",
+      "color": "#E3F2FD",
+      "description": "Fresh salmon, rice, edamame, mango, avocado and spicy mayo.",
+      "tags": [
+        "omega-3",
+        "premium",
+        "trendy"
+      ],
+      "userId": "1",
+      "itemId": 34
+    },
+    {
+      "id": "46dd",
+      "name": "Sweet Potato Fries",
+      "ageGroup": "6-10",
+      "category": "Snacks",
+      "price": 79,
+      "calories": 150,
+      "protein": "2g",
+      "carbs": "28g",
+      "fat": "4g",
+      "rating": 4.7,
+      "isHealthy": true,
+      "emoji": "🍟",
+      "color": "#FBE9E7",
+      "description": "Baked sweet potato fries. A healthy twist on every kid's favorite snack.",
+      "tags": [
+        "baked",
+        "veggie",
+        "kids-love"
+      ],
+      "userId": "3a2e",
+      "itemId": 18
+    },
+    {
+      "id": "8196",
+      "name": "Fruit Kebabs",
+      "ageGroup": "6-10",
+      "category": "Snacks",
+      "price": 79,
+      "calories": 75,
+      "protein": "1g",
+      "carbs": "18g",
+      "fat": "0.5g",
+      "rating": 4.8,
+      "isHealthy": true,
+      "emoji": "🍢",
+      "color": "#FCE4EC",
+      "description": "Colorful skewers with strawberry, melon, grapes and pineapple. Kids love these!",
+      "tags": [
+        "fun",
+        "fruit",
+        "colorful"
+      ],
+      "userId": "6995",
+      "itemId": 12
+    }
+  ],
+  "orders": [],
+  "Contact-us": [
+    {
+      "id": "89e2",
+      "name": "meet",
+      "email": "mgvora@gmail.com",
+      "subject": "this is test",
+      "message": "good..."
+    },
+    {
+      "id": "ebbe",
+      "name": "njzx",
+      "email": "mg@gmail.com",
+      "subject": "askcjbwiuc",
+      "message": "smkbciqwubfxoqw ef"
+    },
+    {
+      "id": "e437",
+      "name": "mg",
+      "email": "mgvora@gmail.com",
+      "subject": "tarang",
+      "message": "my name is tarang."
+    },
+    {
+      "id": "3960",
+      "name": "meet",
+      "email": "meet@gmail.com",
+      "subject": "abc",
+      "message": "abc"
+    },
+    {
+      "id": "9dfb",
+      "name": "Meet Vora",
+      "email": "meetvora37@gmail.com",
+      "subject": "abcd",
+      "message": "hiiii this is one charcter"
+    },
+    {
+      "id": "48e4",
+      "name": "Meet Vora",
+      "email": "meetvora37@gmail.com",
+      "subject": "ncsowuhdviwge",
+      "message": "qkjfbwjbefo2 wihdo2fiwbwi"
+    },
+    {
+      "id": "d67a",
+      "name": "MGVORA",
+      "email": "meetvora.inexture@gmail.com",
+      "subject": "bsygcy",
+      "message": "hdxwi wjhdiwuh wdcjhw  wijshiu2 "
+    },
+    {
+      "id": "9f53",
+      "name": "M.G. VORA",
+      "email": "meetvora37@gmail.com",
+      "subject": "abcd",
+      "message": "wkejfbco wdno jnwoednd"
+    },
+    {
+      "id": "8dab",
+      "name": "Meet Vora",
+      "email": "meetvora37@gmail.com",
+      "subject": "ncsowuhdviwge",
+      "message": "lp odvojefpow pfodj0 owj"
+    },
+    {
+      "id": "35b6",
+      "name": "Meet Vora",
+      "email": "meetvora37@gmail.com",
+      "subject": "abcd",
+      "message": "kjaschi wjdhiwjhdsf iweuhd"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

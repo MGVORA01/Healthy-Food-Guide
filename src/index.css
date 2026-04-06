@@ -1,1 +1,61 @@
+@config "../tailwind.config.js";
 @import "tailwindcss";
+
+@layer base {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #f8fdf8;
+    color: #1a2e1a;
+    scroll-behavior: smooth;
+  }
+  h1, h2, h3 { font-family: 'Playfair Display', serif; }
+}
+
+@layer components {
+  /* Flip Card */
+  .flip-card { perspective: 1000px; overflow: hidden; }
+  .flip-card-inner {
+    position: relative; width: 100%; height: 100%;
+    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
+  .flip-card-front, .flip-card-back {
+    position: absolute; width: 100%; height: 100%;
+    backface-visibility: hidden; -webkit-backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+  .flip-card-front { transform: rotateY(0deg); }
+  .flip-card-back { transform: rotateY(180deg); }
+
+  /* Streak fire glow */
+  .streak-glow { text-shadow: 0 0 10px #f97316, 0 0 20px #f97316; }
+
+  /* Level bar */
+  .level-bar-fill { transition: width 1s cubic-bezier(0.4,0,0.2,1); }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #f0fdf4; }
+  ::-webkit-scrollbar-thumb { background: #86efac; border-radius: 10px; }
+
+  /* Page transition wrapper */
+  .page-enter { animation: fadeIn 0.4s ease forwards; }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #16a34a, #4ade80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .bg-glass {
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .border-glass { border: 1px solid rgba(255,255,255,0.3); }
+}
